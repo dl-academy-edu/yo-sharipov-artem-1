@@ -1,3 +1,3 @@
-# yo-sharipov-artem-1
-Учебный репозиторий студента группы F117 Шарипова Артема. 1-ый модуль.   
-Наставник: [Филиппов Александр](https://t.me/aleksandrfilippov).
+# Личный проект "DLK Shop"
+* Студент [Шарипов Артем](https://t.me/Sharipov293)
+* Наставник [Филиппов Александр](https://t.me/aleksandrfilippov).
