@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toys</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header__link">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__nav-link">BLOG</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__nav-link">CATALOG</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__nav-link">ABOUT US</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <input type="search" name="search" placeholder="">
+                    <button type="button">search</button>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__link">Contact up</a>
+                </li> 
+            </ul>
+        </nav>           
+    </header>
+    <section class="kids">
+        <h1 class="kids__title">Toy for kids</h1>
+            <button class="kids__btn" type="button">Home</button>
+            <button class="kids__btn" type="button">></button>
+            <button class="kids__btn" type="button">Catalog</button>
+            <button class="kids__btn" type="button">></button>
+            <button class="kids__btn" type="button">kids</button>
+    </section>
+    <form action="#">
+        <h4 class="filter__title">Cost</h4>
+            <output class="filter__out" for="fader" id="volume">0</output>
+            <input class="filter__inp" type="range" id="fader" min="0" max="500">
+            <output class="filter__out" for="fader" >500</output>
+        <h4 class="filter__title">Color</h4>
+            <label class="filter__color">
+                <input class="filter__check" type="checkbox"><span class="filter__text">black</span><br>
+            </label>
+            <label class="filter__color" >
+                <input class="filter__check" type="checkbox"><span class="filter__text">blue</span><br>       
+            </label>
+            <label class="filter__color">
+                <input class="filter__check" type="checkbox"><span class="filter__text">green</span><br>
+            </label> 
+            <label class="filter__color">
+                <input class="filter__check" type="checkbox"><span class="filter__text">white</span>
+            </label>
+        <h4 class="filter__title">Delivery</h4>
+            <label class="filter__color">
+                <input class="filter__radio" type="radio"><span class="filter__text">Free shipping</span><br>
+            </label> 
+            <label class="filter__color">
+                <input class="filter__radio" type="radio"><span class="filter__text">Fast shipping</span>
+            </label>
+        <h4 class="filter__title">Amount</h4>
+            <select name="price" id="#">
+                <option value="">0-5</option>
+                <option value="">10-20</option>
+                <option value="">20-50</option>
+            </select>
+        <button class="filter__btn" type="button">Apply</button>
+    </form>
+    <div class="cards">
+        <ul class="cards__list">
+            <li class="cards__list-iten"><img src="./images/cards_akula.png" alt="akula">SHARKY BEAN BAG CHAIR COVER <br><b>$60.00 USD</b></li>
+            <li class="cards__list-iten"><img src="./images/cards_ramki.png" alt="ramki">BRASS DECO FRAMES <br><b>$66.00 USD</b></li>
+            <li class="cards__list-iten"><img src="./images/cards_fartuk.png" alt="fartuk">CIBO FULL APRON <br><b>$60.00 USD</b></li>
+            <li class="cards__list-iten"><img src="./images/cards_toy.png" alt="toy">GATCHA GATCHA GUMBALL MACHINE <br><b>$56.00 USD</b></li>
+            <li class="cards__list-iten"><img src="./images/cards_candle.png" alt="candle">CHRISTMAS ADVENT SCENTED CANDLE <br><b>$29.00 USD</b></li>
+            <li class="cards__list-iten"><img src="./images/cards_lamp.png" alt="lamp">TANGLE SPINNING TEA LIGHT <br> <b>$56.00 USD</b></li>
+        </ul>
+    </div>   
+    <div class="pagination">
+            <ul>
+                <li><a href="">1</a>
+                </li>
+                <li><a href="">2</a>
+                </li>
+                <li><a href="">3</a>
+                </li>
+                <li><a href="">4</a>
+                </li>
+            </ul>
+    </div> 
+    <footer class="footer">
+        <h4 class="footer__title">Navigation</h4>
+        <ul class="footer__list"> 
+            <li class="footer__list-link"><a href="/">About Us</a></li>
+            <li class="footer__list-link"><a href="/">Blog</a></li>
+            <li class="footer__list-link"><a href="/">Design Services</a></li>
+            <li class="footer__list-link"><a href="/">Featured On</a></li>
+            <li class="footer__list-link"><a href="/">2018 Holiday Catalog</a></li>
+            <li class="footer__list-link"><a href="/">Shop By Designer</a></li>
+            <li class="footer__list-link"><a href="/">Company Rating</a></li>
+        </ul>
+        <h4 class="footer__title">Customer Information</h4>
+        <ul class="footer__list">
+            
+            <li class="footer__list-link"><a href="/">Contact Us</a></li>
+            <li class="footer__list-link"><a href="/">Sale Exclusions</a></li>
+            <li class="footer__list-link"><a href="/">Shipping & Returns</a></li>
+            <li class="footer__list-link"><a href="/">Terms & Conditions</a></li>
+            <li class="footer__list-link"><a href="/">Privacy Policy</a></li>
+            <li class="footer__list-link"><a href="/">Search</a></li>
+            <li class="footer__list-link"><a href="/">Copyright © 2018 Dlk • Design Life Kids</a></li>
+        </ul>
+        <h4 class="footer__title">Connect</h4>
+            <input type="email" name="email" placeholder="email">
+            <Button type="submit" class="footer_btn">Join</Button>
+        <ul class="footer__list">
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
+        </ul>
+        <h4 class="footer__title">Web Design — Direct Line Development</h4>
+
+    </footer>
+    
+    
+</body>
+</html>
