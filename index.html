@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLK_SHOP</title>
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="container header">
         <a href="/" class="header__link">
-            <img class="header__img" src="./images/logo.png" alt="Logo DLK">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -22,25 +29,36 @@
                 <li class="header__nav-list-item">
                     <a href="/" class="header__nav-link">ABOUT US</a>
                 </li>
-                <li class="header__nav-list-item">
-                    <input type="search" name="search" placeholder="">
-                    <button type="button">search</button>
-                </li>
-                <li class="header__nav-list-item">
-                    <a href="/" class="header__link">Contact up</a>
-                </li> 
             </ul>
-        </nav>           
+        </nav>    
+        <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <button class="header__additional-search" type="button" ><img src="./images/lupa.png"  alt="lupa"></button>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/" class="header__additional-link">CONTACT US</a>
+            </li> 
+        </ul class="header__adi">
+                  
     </header>
     <main>
-        <section class="banner">
-            <h1 class="banner__title">THE OOH NOO <br> COLLECTION</h1>
-            <p class="banner__desc">Designed in Svolenia</p>
-            <button class="banner__btn">EXPLORE NOW</button>
-            <p class="banner__desc">FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OF MORE!
-            </p>
-            <Img class="banner_img" src="./images/banner.png" alt="monster and car">
-            
+        <section class="container banner">
+            <div class="banner__slider">
+                <p class="slider__title">01</p>
+                <button class="slider__btn" type="button"></button>
+                <button class="slider__btn" type="button"></button>
+                <button class="slider__btn" type="button"></button>
+                <button class="slider__btn" type="button"></button>
+            </div>
+            <div class="banner__title">
+                <h1 class="banner__text">THE OOH NOO COLLECTION</h1>
+                <p class="banner__desc">Designed in Slovenia</p>
+                <button class="banner__btn">EXPLORE NOW</button>
+            </div>
+            <div class="banner__footer">
+                FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OF MORE!
+            </div>
+            <img class="banner_img" src="./images/banner.png"  alt="monster and car">
         </section>
     </main>
     <section class="products">
@@ -84,7 +102,7 @@
         <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
     </article>
     <footer class="footer">
-        <h4 class="footer__title">Navigation</h4>
+        <h3 class="footer__title">Navigation</h3>
         <ul class="footer__list"> 
             <li class="footer__list-item"><a class="footer__link" href="/">About Us</a></li>
             <li class="footer__list-item"><a class="footer__link" href="/">Blog</a></li>
@@ -94,7 +112,7 @@
             <li class="footer__list-item"><a class="footer__link" href="/">Shop By Designer</a></li>
             <li class="footer__list-item"><a class="footer__link" href="/">Company Rating</a></li>
         </ul>
-        <h4 class="footer__title">Customer Information</h4>
+        <h3 class="footer__title">Customer Information</h3>
         <ul class="footer__list">
             
             <li class="footer__list-item"><a class="footer__link" href="/">Contact Us</a></li>
@@ -105,7 +123,7 @@
             <li class="footer__list-item"><a class="footer__link" href="/">Search</a></li>
             <li class="footer__list-item"><a class="footer__link" href="/">Copyright © 2018 Dlk • Design Life Kids</a></li>
         </ul>
-        <h4 class="footer__title">Connect</h4>
+        <h3 class="footer__title">Connect</h3>
             <input type="email" name="email" placeholder="email">
             <Button type="submit" class="footer_btn">Join</Button>
         <ul class="footer__list">
@@ -114,7 +132,7 @@
             <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
             <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
         </ul>
-        <h4 class="footer__title">Web Design — Direct Line Development</h4>
+        <h3 class="footer__title">Web Design — Direct Line Development</h3>
 
     </footer>
     

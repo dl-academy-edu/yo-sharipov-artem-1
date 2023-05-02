@@ -38,36 +38,33 @@
         <button class="contact__btn" type="button">></button>
         <button class="contact__btn" type="button">Contact  Us</button>
     </section><br>
-    <form action="#" name="contact">
-        <p>
-            <label class="contact__label" for="name">Name
-                <input class="contact__pole" id="name" type="text">
-            </label>
-        </p>
-        <p>
-            <label class="contact__label" for="Phone">Phone
-                <input class="contact__pole" id="Phone" type="tel">
-            </label>
-        </p>
-        <p>
-            <label class="contact__label" for="email">Email
-                <input class="contact__pole" id="email" type="email">
-            </label>    
-        </p>
-        <p>
-            <label class="contact__label" for="message">Message
-                <input class="contact__pole" id="message" type="text">
-            </label>
-        </p>
-        <p>
-            <label class="contact__label">
-                <input class="contact__pole" type="checkbox" name="agree">By clicking on the button, you consent to the processing of your personal data
-            </label> 
-        </p>
-        <p>
-            <input class="contact__btn" type="submit" value="Submit">
-        </p>
+    <section class="container contact__form">
+        <form class="contact__form" action="#" name="contact">
+            <div class="contact__two-input">
+                <div class="contact__label-wrapper">
+                    <label class="contact__label" for="name">Name</label>
+                    <input class="contact__input" id="name" type="text">   
+                </div>
+                <div class="contact__two-input">
+                        <label class="contact__label" for="Phone">Phone</label>
+                        <input class="contact__input" id="Phone" type="tel">
+                        <label class="contact__label" for="email">Email</label>
+                        <input class="contact__input" id="email" type="email">    
+                </div>
+                <div class="contact__label-wrapper">
+                    <label class="contact__label" for="message">Message</label>
+                    <textarea class="contact__area" id="message" cols="30" rows="10"></textarea>
+                    
+                </div>
+                <div class="contact__item">
+                    <label class="contact__label" for="consent"></label> 
+                    <input class="contact__input" type="checkbox" id="consent">By clicking on the button, you consent to the processing of your personal data   
+                </div>
+                <p>
+                    <input class="contact__btn" type="submit" value="Submit">
+            </div>
     </form>
+    </section>
     <div class="contact__manual">
         <p class="contact__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
         <p class="contact__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
