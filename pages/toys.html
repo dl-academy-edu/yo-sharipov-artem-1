@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/toys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
     <title>toys</title>
 </head>
 <body>
-    <header class="header">
+    <header class="container header">
         <a href="/" class="header__link">
-            <img class="header__img" src="./images/logo.png" alt="Logo DLK">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -22,67 +29,153 @@
                 <li class="header__nav-list-item">
                     <a href="/" class="header__nav-link">ABOUT US</a>
                 </li>
-                <li class="header__nav-list-item">
-                    <input type="search" name="search" placeholder="">
-                    <button type="button">search</button>
-                </li>
-                <li class="header__nav-list-item">
-                    <a href="/" class="header__link">Contact up</a>
-                </li> 
             </ul>
-        </nav>           
+        </nav>    
+        <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <a class="header__additional-search" type="button" ></a>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/" class="header__additional-link">CONTACT US</a>
+            </li> 
+        </ul class="header__adi">           
     </header>
-    <section class="kids">
-        <h1 class="kids__title">Toy for kids</h1>
-            <button class="kids__btn" type="button">Home</button>
-            <button class="kids__btn" type="button">></button>
-            <button class="kids__btn" type="button">Catalog</button>
-            <button class="kids__btn" type="button">></button>
-            <button class="kids__btn" type="button">kids</button>
-    </section>
-    <form action="#">
-        <h4 class="filter__title">Cost</h4>
-            <output class="filter__out" for="fader" id="volume">0</output>
-            <input class="filter__inp" type="range" id="fader" min="0" max="500">
-            <output class="filter__out" for="fader" >500</output>
-        <h4 class="filter__title">Color</h4>
-            <label class="filter__color">
-                <input class="filter__check" type="checkbox"><span class="filter__text">black</span><br>
-            </label>
-            <label class="filter__color" >
-                <input class="filter__check" type="checkbox"><span class="filter__text">blue</span><br>       
-            </label>
-            <label class="filter__color">
-                <input class="filter__check" type="checkbox"><span class="filter__text">green</span><br>
-            </label> 
-            <label class="filter__color">
-                <input class="filter__check" type="checkbox"><span class="filter__text">white</span>
-            </label>
-        <h4 class="filter__title">Delivery</h4>
-            <label class="filter__color">
-                <input class="filter__radio" type="radio"><span class="filter__text">Free shipping</span><br>
-            </label> 
-            <label class="filter__color">
-                <input class="filter__radio" type="radio"><span class="filter__text">Fast shipping</span>
-            </label>
-        <h4 class="filter__title">Amount</h4>
-            <select name="price" id="#">
-                <option value="">0-5</option>
-                <option value="">10-20</option>
-                <option value="">20-50</option>
-            </select>
-        <button class="filter__btn" type="button">Apply</button>
-    </form>
-    <div class="cards">
-        <ul class="cards__list">
-            <li class="cards__list-iten"><img src="./images/cards_akula.png" alt="akula">SHARKY BEAN BAG CHAIR COVER <br><b>$60.00 USD</b></li>
-            <li class="cards__list-iten"><img src="./images/cards_ramki.png" alt="ramki">BRASS DECO FRAMES <br><b>$66.00 USD</b></li>
-            <li class="cards__list-iten"><img src="./images/cards_fartuk.png" alt="fartuk">CIBO FULL APRON <br><b>$60.00 USD</b></li>
-            <li class="cards__list-iten"><img src="./images/cards_toy.png" alt="toy">GATCHA GATCHA GUMBALL MACHINE <br><b>$56.00 USD</b></li>
-            <li class="cards__list-iten"><img src="./images/cards_candle.png" alt="candle">CHRISTMAS ADVENT SCENTED CANDLE <br><b>$29.00 USD</b></li>
-            <li class="cards__list-iten"><img src="./images/cards_lamp.png" alt="lamp">TANGLE SPINNING TEA LIGHT <br> <b>$56.00 USD</b></li>
+    <main class="container-back kids">
+        <h1 class="container kids__title">Toy for kids</h1>
+        <ul class="container crumbs__list">
+            <li class="crumbs__list-iten">
+                <a class="crumbs__link" href="#">Home</a>
+            </li>
+            <li class="crumbs__list-iten">
+                <a class="crumbs__link" href="#">Catalog</a>
+            </li>
+            <li class="crumbs__list-iten">
+                <a class="crumbs__link" href="#">Toys</a>
+            </li>
         </ul>
-    </div>   
+        <div class="filter">
+            <form class="filter__form" action="#">
+            <fieldset class="cost">
+                <legend class="filter__title">Cost</legend>
+                <input class="filter__inp" type="range" id="fader" min="0" max="500"
+                value="120">
+                <div class="filter_value">
+                    <span>0</span>
+                    <span>500</span>
+                </div>
+            </fieldset>
+            <fieldset class="color">
+            <legend class="filter__title">Color</legend>
+                <ul class="color__list">
+                    <li class="color__item">  
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox" checked>
+                            <span class="click"></span>
+                            <span class="filter__text">Black</span>
+                        </label>
+                    </li>  
+                    <li class="color__item">
+                        <label class="filter__color" >
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">Blue</span>     
+                        </label>
+                    </li>
+                    <li class="color__item">
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">Green</span>
+                        </label> 
+                    </li>
+                    <li class="color__item">
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">White</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="Delivery">
+            <legend class="filter__title">Delivery</legend>
+                <ul class="Delivery__list">
+                    <li class="Delivery__item">
+                        <label class="filter__Delivery">
+                            <input class="filter__radio" type="radio" >
+                            <span class="clack"></span>
+                            <span class="filter__text">Free shipping</span>
+                        </label> 
+                    </li>
+                    <li class="Delivery__item">
+                        <label class="filter__Delivery">
+                            <input class="filter__radio" type="radio" checked>
+                            <span class="clack"></span>
+                            <span class="filter__text">Fast shipping</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="Amount">
+            <legend class="filter__title">Amount</legend>
+            <ul class="amount__list">
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="0-5" checked>
+                    <span class ="value value_active">0-5</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="10-20">
+                    <span class="value">10-20</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="20-50">
+                    <span class="value">20-50</span>
+                  </label>
+                </li>
+                </ul>
+            </fieldset>
+            <button class="filter__btn" type="button">APPLY</button>
+            </form>
+        </div>
+    <section class="container cards">
+        <ul class="cards__list">
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#"></a>
+                <span class="cards__text"> SHARKY BEAN BAG CHAIR COVER</span>
+                <span class="cards__price"> $60.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#"></a>
+                <span class="cards__text"> BRASS DECO FRAMES</span>
+                <span class="cards__price"> $66.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <i<a class="cards__link" href="#"></a>
+                <span class="cards__text"> CIBO FULL APRON</span>
+                <span class="cards__price"> $60.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#"></a>
+                <span class="cards__text"> GATCHA GATCHA GUMBALL MACHINE</span>
+                <span class="cards__price"> $56.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <i<a class="cards__link" href="#"></a>
+                <span class="cards__text"> CHRISTMAS ADVENT SCENTED CANDLE</span>
+                <span class="cards__price"> $29.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+        <a class="cards__link" href="#"></a>
+                <span class="cards__text"> TANGLE SPINNING TEA LIGHT</span>
+                <span class="cards__price"> $56.00 USD</span>
+            </li>
+        </ul>
+    </section>   
     <div class="pagination">
             <ul>
                 <li><a href="">1</a>
@@ -95,6 +188,7 @@
                 </li>
             </ul>
     </div> 
+    </main>
     <footer class="footer">
         <h4 class="footer__title">Navigation</h4>
         <ul class="footer__list"> 

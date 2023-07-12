@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/contact_us.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
     <title>Contact_Us</title>
 </head>
 <body>
-    <header class="header">
+    <header class="container header">
         <a href="/" class="header__link">
-            <img class="header__img" src="./images/logo.png" alt="Logo DLK">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -22,35 +28,43 @@
                 <li class="header__nav-list-item">
                     <a href="/" class="header__nav-link">ABOUT US</a>
                 </li>
-                <li class="header__nav-list-item">
-                    <input type="search" name="search" placeholder="">
-                    <button type="button">search</button>
-                </li>
-                <li class="header__nav-list-item">
-                    <a href="/" class="header__link">Contact up</a>
-                </li> 
             </ul>
-        </nav>           
+        </nav>    
+        <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <button class="header__additional-search" type="button" ><img src="./images/lupa.png"  alt="lupa"></button>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/" class="header__additional-link">CONTACT US</a>
+            </li> 
+        </ul class="header__adi">
+                  
     </header>
-    <section class="contact">
-        <h1 class="contact__title">Contact  Us</h1>
-        <button class="contact__btn" type="button">Home</button>
-        <button class="contact__btn" type="button">></button>
-        <button class="contact__btn" type="button">Contact  Us</button>
-    </section><br>
-    <section class="container contact__form">
+    <section class="container contact">
+        <h1 class="contact__title">Contact Us</h1>
+        <ul class="contact__list">
+            <li class="contact__list_iten">
+                <a class="contact__link" href="#">Home</a>
+            </li>
+            <li class="contact__list_iten">
+                <a class="contact__link" href="#">Contact  Us</a>
+            </li>
+        </ul>
+    </section>
+    <section class="container contact__window">
         <form class="contact__form" action="#" name="contact">
-            <div class="contact__two-input">
-                <div class="contact__label-wrapper">
-                    <label class="contact__label" for="name">Name</label>
-                    <input class="contact__input" id="name" type="text">   
-                </div>
-                <div class="contact__two-input">
-                        <label class="contact__label" for="Phone">Phone</label>
-                        <input class="contact__input" id="Phone" type="tel">
-                        <label class="contact__label" for="email">Email</label>
-                        <input class="contact__input" id="email" type="email">    
-                </div>
+                <label class="contact__label" for="name">Name</label>
+                <input class="contact__input" id="name" type="text" placeholder="Ivan Ivanov">
+                    <div class="contact__user">
+                        <div class="contact__two-input">
+                            <label class="contact__label" for="Phone">Phone</label>
+                            <input class="contact__input" id="Phone" type="tel">   
+                        </div>
+                        <div class="contact__two-input">
+                            <label class="contact__label" for="email">Email</label>
+                            <input class="contact__input" id="email" type="email"> 
+                        </div>
+                    </div>
                 <div class="contact__label-wrapper">
                     <label class="contact__label" for="message">Message</label>
                     <textarea class="contact__area" id="message" cols="30" rows="10"></textarea>
@@ -60,49 +74,51 @@
                     <label class="contact__label" for="consent"></label> 
                     <input class="contact__input" type="checkbox" id="consent">By clicking on the button, you consent to the processing of your personal data   
                 </div>
-                <p>
-                    <input class="contact__btn" type="submit" value="Submit">
-            </div>
-    </form>
+                <input class="contact__btn" type="submit" value="Submit">
+        </form>
+        <div class="contact__manual">
+            <p class="contact__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p class="contact__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <a class="contact__manual-link" href="#">An expert is waiting to help you!</a>
+        </div>
     </section>
-    <div class="contact__manual">
-        <p class="contact__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
-        <p class="contact__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-        <p class="contact__text">An expert is waiting to help you!</p>
-    </div>
-    <footer class="footer">
-        <h4 class="footer__title">Navigation</h4>
-        <ul class="footer__list"> 
-            <li class="footer__list-item"><a class="footer__link" href="/">About Us</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Blog</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Design Services</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Featured On</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">2018 Holiday Catalog</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Shop By Designer</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Company Rating</a></li>
-        </ul>
-        <h4 class="footer__title">Customer Information</h4>
-        <ul class="footer__list">
-            
-            <li class="footer__list-item"><a class="footer__link" href="/">Contact Us</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Sale Exclusions</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Shipping & Returns</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Terms & Conditions</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Privacy Policy</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Search</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Copyright © 2018 Dlk • Design Life Kids</a></li>
-        </ul>
-        <h4 class="footer__title">Connect</h4>
-            <input type="email" name="email" placeholder="email">
-            <Button type="submit" class="footer_btn">Join</Button>
-        <ul class="footer__list">
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
-        </ul>
-        <h4 class="footer__title">Web Design — Direct Line Development</h4>
+    <footer class="footer container">
+        <div class="footer__block">
+            <div class="footer__nav">
+            <h3 class="footer__title">Navigation</h3>
+            <ul class="footer__list"> 
+                <li class="footer__list-item"><a class="footer__link" href="/">About Us</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Blog</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Design Services</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Featured On</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">2018 Holiday Catalog</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Shop By Designer</a></li>
+            </ul>
+            </div>
+            <div class="footer__nav">
+            <h3 class="footer__title">Customer Information</h3>
+            <ul class="footer__list">
 
+                <li class="footer__list-item"><a class="footer__link" href="/">Contact Us</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Sale Exclusions</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Shipping & Returns</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Terms & Conditions</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Privacy Policy</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Search</a></li>
+            </ul>
+            </div>
+            <div>
+            <h3 class="footer__title">Connect</h3>
+                <input type="email" name="email" placeholder="email">
+                <Button type="submit" class="footer_btn">Join</Button>
+            <ul class="footer__list">
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
+            </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

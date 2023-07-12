@@ -1,0 +1,97 @@
+.contact{
+
+}
+
+
+
+.contact__title{
+    font-family: Montserrat ;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 9px;
+    line-height: 49px ;
+    word-spacing: 10px;
+    margin: auto 0;
+    
+}
+
+.contact__list{
+    display: flex;
+    padding: 0px ;
+
+}
+
+.contact__list_iten{
+    margin-right: 11px;
+}
+.contact__link{
+    font-family:Crimson Text ;
+    font-size: 20px;
+    color: black;
+
+}
+
+.contact__list::after{
+    content: '>';
+}
+
+.contact__window{
+    display: flex;
+    padding-top: 35px;
+    
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5EAF8;
+    padding: 40px;
+    width: 100%;
+    max-width: 680px;
+   
+}
+
+.contact__input{
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 13px 18px;
+    font-family: open sans;
+    font-size: 18px;
+}
+
+.contact__label{
+    display: flex;
+    margin-bottom: 6px;
+    font-family: open sans;
+    font-size: 14px;
+}
+
+.contact__user{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+
+}
+
+.contact__two-input{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-right: 3%;
+}
+
+
+
+
+.contact__manual{
+    padding-left: 120px;
+}
+
+.contact__text{
+    font-family: Open Sans ;
+    font-size: 16px;
+    font-weight: 400;
+    
+}

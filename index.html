@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container header">
@@ -55,85 +55,114 @@
                 <p class="banner__desc">Designed in Slovenia</p>
                 <button class="banner__btn">EXPLORE NOW</button>
             </div>
-            <div class="banner__footer">
-                FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OF MORE!
-            </div>
+            <p class="banner__footer">
+                FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!
+            </p>
             <img class="banner_img" src="./images/banner.png"  alt="monster and car">
         </section>
     </main>
-    <section class="products">
+    <section class="container products">
         <h2 class="products__title">CATEGORY PRODUCTS</h2>
         <ul class="products__list">
-            <li class="products__list-item"><a  href="/" class="products__link">APPAREL KIDS<img class="products__img" src="./images/products_one.png" alt="t-shirt"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">HOLIDAY SHOP<img class="products__img" src="./images/products_two.png" alt="sock"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">YOYS<img class="products__img" src="./images/products_three.png" alt="deer"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">ACCESSORIES<img class="products__img" src="./images/products_four.png" alt="monkey"></a></li>
+            <li class="products__list-item">
+                <a  href="/" class="products__link" style="background-image: url(./images/products_one.png);">
+                    <span class="products__link-title"> APPAREL KIDS</span>
+                </a>
+            </li>
+            <li class="products__list-item">
+                <a  href="/" class="products__link" style="background-image: url(./images/products_two.png);">
+                    <span class="products__link-title">HOLIDAY SHOP</span> 
+                </a>
+            </li>
+            <li class="products__list-item">
+                <a  href="/" class="products__link" style="background-image: url(./images/products_three.png);">
+                    <span class="products__link-title">TOYS</span>
+                </a>
+            </li>
+            <li class="products__list-item">
+                <a  href="/" class="products__link" style="background-image: url(./images/products_four.png);">
+                    <span class="products__link-title">ACCESSORIES</span>
+                </a>
+            </li>
         </ul>
-        <p class="products__desc">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        <div class="products__slider">
+            <button class="products__btn" style="background-image: url(./images/go.png);"></button>
+            <button class="products__btn" style="background-image: url(./images/back.png);"></button>
+        <div class="products__desc">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</div>
+        </div>
     </section>
-    <section class="service">
+    <section class="container service">
         <img class="service__img" src="./images/service.jpg" alt="blonde in a dress">
-        <h2 class="service__title">DELIVERY</h2>
-        <ul class="service__list">
-            <li class="service__list-item"><button class="service__btn" type="button">Delivery</button></li>
-            <li class="service__list-item"><button class="service__btn" type="button">Guarantee</button></li>
-            <li class="service__list-item"><button class="service__btn" type="button">Credit</button></li>
-        </ul>
-        <p class="service__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-        <p class="service__text">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-        <a class="service__link" href="/">LEARN MORE</a>
+        <div class="service__block">
+            <h2 class="service__title">DELIVERY</h2>
+            <ul class="service__list">
+                <li class="service__list-item"><button class="service__btn" type="button">Delivery</button></li>
+                <li class="service__list-item"><button class="service__btn" type="button">Guarantee</button></li>
+                <li class="service__list-item"><button class="service__btn" type="button">Credit</button></li>
+            </ul>
+            <p class="service__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <p class="service__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+            <a class="service__link" href="/">LEARN MORE</a>
+        </div>
     </section>
-    <section class="sponsor">
+    <section class="sponsor container">
         <ul class="sponsor__list">
-            <li class="sponsor__list-iten"><img src="./images/sponser_one.png" alt="Mail"></li>
-            <li class="sponsor__list-iten"><img src="./images/sponsor_two.png" alt="Apple"></li>
-            <li class="sponsor__list-iten"><img src="./images/sponsor_three.png" alt="Eltex"></li>
-            <li class="sponsor__list-iten"><img src="./images/sponser_four.png" alt="Owox"></li>
+            <li class="sponsor__list-iten"><img src="./images/sponser_mail.png" alt="Mail"></li>
+            <li class="sponsor__list-iten"><img src="./images/sponser_apple.png" alt="Apple"></li>
+            <li class="sponsor__list-iten"><img src="./images/sponser_eltex.png" alt="Eltex"></li>
+            <li class="sponsor__list-iten"><img src="./images/sponser_owox.png" alt="Owox"></li>
         </ul>
     </section>
-    <article class="design">
-        <h2 class="design__title" >DESING LIFE KIDS</h2>
-        <h3 class="design__subtitle">About Us</h3>
-        <p class="design__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-        <button class="design__btn">BUY NOW</button>
+    <article class="Info container">
+        <div class="Info__design">
+            <h2 class="design__title" >DESING LIFE KIDS</h2>
+            <h3 class="design__subtitle">About Us</h3>
+            <p class="design__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <button class="design__btn">BUY NOW</button>
+        </div>
+        <div class="Info__contacts">
+            <h2 class="contacts__title">CONTACTS</h2>
+            <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <ifame class="contacts__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.3627681151182!2d49.29079778005579!3d53.51226763752443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1683364919262!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </article>
-    <article class="contacts">
-        <h2 class="contacts__title">CONTACTS</h2>
-        <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-    </article>
-    <footer class="footer">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list"> 
-            <li class="footer__list-item"><a class="footer__link" href="/">About Us</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Blog</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Design Services</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Featured On</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">2018 Holiday Catalog</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Shop By Designer</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Company Rating</a></li>
-        </ul>
-        <h3 class="footer__title">Customer Information</h3>
-        <ul class="footer__list">
-            
-            <li class="footer__list-item"><a class="footer__link" href="/">Contact Us</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Sale Exclusions</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Shipping & Returns</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Terms & Conditions</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Privacy Policy</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Search</a></li>
-            <li class="footer__list-item"><a class="footer__link" href="/">Copyright © 2018 Dlk • Design Life Kids</a></li>
-        </ul>
-        <h3 class="footer__title">Connect</h3>
-            <input type="email" name="email" placeholder="email">
-            <Button type="submit" class="footer_btn">Join</Button>
-        <ul class="footer__list">
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
-            <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
-        </ul>
-        <h3 class="footer__title">Web Design — Direct Line Development</h3>
+    <footer class="footer container">
+        <div class="footer__block">
+            <div class="footer__nav">
+            <h3 class="footer__title">Navigation</h3>
+            <ul class="footer__list"> 
+                <li class="footer__list-item"><a class="footer__link" href="/">About Us</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Blog</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Design Services</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Featured On</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">2018 Holiday Catalog</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Shop By Designer</a></li>
+            </ul>
+            </div>
+            <div class="footer__nav">
+            <h3 class="footer__title">Customer Information</h3>
+            <ul class="footer__list">
 
+                <li class="footer__list-item"><a class="footer__link" href="/">Contact Us</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Sale Exclusions</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Shipping & Returns</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Terms & Conditions</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Privacy Policy</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Search</a></li>
+            </ul>
+            </div>
+            <div>
+            <h3 class="footer__title">Connect</h3>
+                <input type="email" name="email" placeholder="email">
+                <Button type="submit" class="footer_btn">Join</Button>
+            <ul class="footer__list">
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
+                <Li class="footer__list-item"><a class="footer__link" href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
+            </ul>
+            </div>
+        </div>
     </footer>
     
 </body>

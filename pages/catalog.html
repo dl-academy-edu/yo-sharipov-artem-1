@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
     <title>catalog</title>
 </head>
 <body> 
-    <header class="header">
+    <header class="container header">
         <a href="/" class="header__link">
-            <img class="header__img" src="./images/logo.png" alt="Logo DLK">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -22,37 +29,51 @@
                 <li class="header__nav-list-item">
                     <a href="/" class="header__nav-link">ABOUT US</a>
                 </li>
-                <li class="header__nav-list-item">
-                    <input type="search" name="search" placeholder="">
-                    <button type="button">search</button>
-                </li>
-                <li class="header__nav-list-item">
-                    <a href="/" class="header__link">Contact up</a>
-                </li> 
             </ul>
-        </nav>           
+        </nav>    
+        <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <button class="header__additional-search" type="button" ><img src="./images/lupa.png"  alt="lupa"></button>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/" class="header__additional-link">CONTACT US</a>
+            </li> 
+        </ul class="header__adi">           
     </header>
-    <section class="products">
-        <h1 class="products__title">Category Products</h1>
-        <button class="products__btn" type="button">Home</button>
-        <button class="products__btn" type="button">></button>
-        <button class="products__btn" type="button">Catalog</button>
-        <ul class="products__list">
-            <li class="products__list-item"><a  href="/" class="products__link">APPAREL KIDS<img class="products__img" src="./images/products_one.png" alt="t-shirt"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">HOLIDAY SHOP<img class="products__img" src="./images/products_two.png" alt="sock"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">YOYS<img class="products__img" src="./images/products_three.png" alt="deer"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">ACCESSORIES<img class="products__img" src="./images/products_four.png" alt="monkey"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">SALE<img class="products__img" src="./images/products_flamingo.png" alt="Flamingoshirt"></a></li>
-            <li class="products__list-item"><a  href="/" class="products__link">APPAREL ADULTS<img class="products__img" src="./images/products_shirt.png" alt="shirt"></a></li>
-        </ul>
-    </section>
-    <section class="description">
-        <h2 class="description__title">Product Description</h2>
-        <p class="description__desc">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister. 
-            A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old. 
-            The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
-        </p>
-    </section>
+    <main class="container products">
+            <h1 class="container products__title">Category Products</h1>
+            <ul class="crumbs__list">
+                <li class="crumbs__list_iten">
+                    <a class="crumbs__link" href="#">Home</a>
+                </li>
+                <li class="crumbs__list_iten">
+                    <a class="crumbs__link" href="#">Catalog</a>
+                </li>
+            </ul>
+        <section class="container products">
+            <ul class="container flex-wrap products__list">
+                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_one.png); background-color:rgba(219, 228, 219, 1);">
+                    <span class="products__link-title">APPAREL KIDS</a></li>
+                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_two.png); background-color: rgba(234, 221, 211, 1);">
+                    <span class="products__link-title">HOLIDAY SHOP</a></li>
+                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_three.png); background-color: rgba(234, 221, 211, 1);">
+                    <span class="products__link-title">YOYS</a></li>
+                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_four.png); background-color: rgba(213, 212, 225, 1);">
+                    <span class="products__link-title">ACCESSORIES</a></li>
+                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_flamingo.png); background-color: rgba(243, 208, 219, 1);">
+                    <span class="products__link-title">SALE</a></li>
+                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_shirt.png); background-color: rgba(229, 234, 248, 1);">
+                    <span class="products__link-title">APPAREL ADULTSs</a></li>
+            </ul>
+        </section>
+        <section class="description">
+            <h2 class="description__title">Product Description</h2>
+            <p class="description__desc">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister. </p> 
+            <p class="description__desc">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old. </p> 
+            <p class="description__desc">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress. </p>
+            </p>
+        </section>
+    </main>
     <footer class="footer">
         <h4 class="footer__title">Navigation</h4>
         <ul class="footer__list"> 
