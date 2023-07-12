@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/toys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <title>toys</title>
+</head>
+<body>
+    <header class="container header">
+        <a href="/" class="header__link">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__nav-link">BLOG</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__nav-link">CATALOG</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="/" class="header__nav-link">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>    
+        <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <a class="header__additional-search" type="button" ></a>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/" class="header__additional-link">CONTACT US</a>
+            </li> 
+        </ul class="header__adi">           
+    </header>
+    <main class="container-back kids">
+        <h1 class="container kids__title">Toy for kids</h1>
+        <ul class="container crumbs__list">
+            <li class="crumbs__list-iten">
+                <a class="crumbs__link" href="#">Home</a>
+            </li>
+            <li class="crumbs__list-iten">
+                <a class="crumbs__link" href="#">Catalog</a>
+            </li>
+            <li class="crumbs__list-iten">
+                <a class="crumbs__link" href="#">Toys</a>
+            </li>
+        </ul>
+        <div class="filter">
+            <form class="filter__form" action="#">
+            <fieldset class="cost">
+                <legend class="filter__title">Cost</legend>
+                <input class="filter__inp" type="range" id="fader" min="0" max="500"
+                value="120">
+                <div class="filter_value">
+                    <span>0</span>
+                    <span>500</span>
+                </div>
+            </fieldset>
+            <fieldset class="color">
+            <legend class="filter__title">Color</legend>
+                <ul class="color__list">
+                    <li class="color__item">  
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox" checked>
+                            <span class="click"></span>
+                            <span class="filter__text">Black</span>
+                        </label>
+                    </li>  
+                    <li class="color__item">
+                        <label class="filter__color" >
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">Blue</span>     
+                        </label>
+                    </li>
+                    <li class="color__item">
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">Green</span>
+                        </label> 
+                    </li>
+                    <li class="color__item">
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">White</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="Delivery">
+            <legend class="filter__title">Delivery</legend>
+                <ul class="Delivery__list">
+                    <li class="Delivery__item">
+                        <label class="filter__Delivery">
+                            <input class="filter__radio" type="radio" >
+                            <span class="clack"></span>
+                            <span class="filter__text">Free shipping</span>
+                        </label> 
+                    </li>
+                    <li class="Delivery__item">
+                        <label class="filter__Delivery">
+                            <input class="filter__radio" type="radio" checked>
+                            <span class="clack"></span>
+                            <span class="filter__text">Fast shipping</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="Amount">
+            <legend class="filter__title">Amount</legend>
+            <ul class="amount__list">
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="0-5" checked>
+                    <span class ="value value_active">0-5</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="10-20">
+                    <span class="value">10-20</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="20-50">
+                    <span class="value">20-50</span>
+                  </label>
+                </li>
+                </ul>
+            </fieldset>
+            <button class="filter__btn" type="button">APPLY</button>
+            </form>
+        </div>
+    <section class="container cards">
+        <ul class="cards__list">
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#"></a>
+                <span class="cards__text"> SHARKY BEAN BAG CHAIR COVER</span>
+                <span class="cards__price"> $60.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#"></a>
+                <span class="cards__text"> BRASS DECO FRAMES</span>
+                <span class="cards__price"> $66.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <i<a class="cards__link" href="#"></a>
+                <span class="cards__text"> CIBO FULL APRON</span>
+                <span class="cards__price"> $60.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#"></a>
+                <span class="cards__text"> GATCHA GATCHA GUMBALL MACHINE</span>
+                <span class="cards__price"> $56.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <i<a class="cards__link" href="#"></a>
+                <span class="cards__text"> CHRISTMAS ADVENT SCENTED CANDLE</span>
+                <span class="cards__price"> $29.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+        <a class="cards__link" href="#"></a>
+                <span class="cards__text"> TANGLE SPINNING TEA LIGHT</span>
+                <span class="cards__price"> $56.00 USD</span>
+            </li>
+        </ul>
+    </section>   
+    <div class="pagination">
+            <ul>
+                <li><a href="">1</a>
+                </li>
+                <li><a href="">2</a>
+                </li>
+                <li><a href="">3</a>
+                </li>
+                <li><a href="">4</a>
+                </li>
+            </ul>
+    </div> 
+    </main>
+    <footer class="footer">
+        <h4 class="footer__title">Navigation</h4>
+        <ul class="footer__list"> 
+            <li class="footer__list-link"><a href="/">About Us</a></li>
+            <li class="footer__list-link"><a href="/">Blog</a></li>
+            <li class="footer__list-link"><a href="/">Design Services</a></li>
+            <li class="footer__list-link"><a href="/">Featured On</a></li>
+            <li class="footer__list-link"><a href="/">2018 Holiday Catalog</a></li>
+            <li class="footer__list-link"><a href="/">Shop By Designer</a></li>
+            <li class="footer__list-link"><a href="/">Company Rating</a></li>
+        </ul>
+        <h4 class="footer__title">Customer Information</h4>
+        <ul class="footer__list">
+            
+            <li class="footer__list-link"><a href="/">Contact Us</a></li>
+            <li class="footer__list-link"><a href="/">Sale Exclusions</a></li>
+            <li class="footer__list-link"><a href="/">Shipping & Returns</a></li>
+            <li class="footer__list-link"><a href="/">Terms & Conditions</a></li>
+            <li class="footer__list-link"><a href="/">Privacy Policy</a></li>
+            <li class="footer__list-link"><a href="/">Search</a></li>
+            <li class="footer__list-link"><a href="/">Copyright © 2018 Dlk • Design Life Kids</a></li>
+        </ul>
+        <h4 class="footer__title">Connect</h4>
+            <input type="email" name="email" placeholder="email">
+            <Button type="submit" class="footer_btn">Join</Button>
+        <ul class="footer__list">
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
+            <Li class="footer__list-link"><a href="/"><img class="footer_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
+        </ul>
+        <h4 class="footer__title">Web Design — Direct Line Development</h4>
+
+    </footer>
+    
+    
+</body>
+</html>

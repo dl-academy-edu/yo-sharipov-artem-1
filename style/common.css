@@ -1,0 +1,178 @@
+body{
+    background-color: #ffffff;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none
+    
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1180px; 
+    padding: 0 20 px;
+    margin: 0 auto; 
+}
+
+.container-back{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin: 48px auto;
+    font-family: 'open sans', sans-serif;
+}
+
+fieldset{
+    border: none;
+}
+
+.header__nav{
+    margin-right: auto;
+}
+
+.header__nav-list {
+    display: flex;
+    margin-left: 19px ;
+    margin-top: 12px;
+}
+.header__nav-list-item{
+    font-size: 14px;
+}
+
+.header__nav-list-item:not(:last-child){
+    margin-right: 20px ;
+}
+
+.header__additional-list{
+    display: flex;
+    align-items: center;
+    line-height: 21px;
+    
+    
+
+}
+.header__additional-list-item:not(:last-child){
+    margin-right: 14px;
+}
+
+
+
+
+
+
+
+.header__nav-list-item{
+    font-weight: 400;
+    
+     
+}
+
+.header__nav-list-item > a {
+    color: rgba(30, 6, 6, 1);
+}
+
+.header__nav-list-item > a:hover {
+    color:  rgba(30, 6, 6, 0.3);
+}
+
+.header__nav-list-item > a:active {
+    color: rgba(30, 6, 6, 0.1);
+}
+
+.header__additional-list-item{
+    font-weight: 700;
+}
+
+.header__additional-link{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.header__additional-search{
+    border: none;
+    background: url(../images/lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 23px;
+    
+}
+.crumbs__list{
+    display: flex;
+    padding: 0px ;
+
+}
+
+.crumbs__list-iten{
+    margin-right: 35px;
+}
+.crumbs__link{
+    font-family:Crimson Text ;
+    font-size: 20px;
+    color: black;
+
+}
+
+.crumbs__list-iten:not(:last-child)::after{
+    content: url(../images/crumds.png);
+    left: 27%;
+    
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color:rgba(67, 67, 67, 1);
+    ;
+    
+}
+
+.footer__block{
+    display: flex;
+    padding: 82px 7.8% 13px;
+    width: 100%;
+    max-width: 420px;
+    margin-right: 2%;
+    
+}
+
+.footer__list{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer__nav{
+    margin: 0 -84px 0 0;
+    padding: 0;
+    
+}
+
+.footer__title{
+    padding-bottom: 30px;
+    
+    
+}
+
+.footer__link{
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 483px;
+    margin-top: 10px;
+    line-height: 11px;
+}
