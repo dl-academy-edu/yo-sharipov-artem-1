@@ -14,53 +14,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container header">
+    <header class="header-main container-back">
+        <div class="header container">
         <a href="/" class="header__link">
             <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-list-item">
-                    <a href="/" class="header__nav-link">BLOG</a>
+                    <a href="/pages/blog.html" class="header__nav-link">BLOG</a>
                 </li>
                 <li class="header__nav-list-item">
-                    <a href="/" class="header__nav-link">CATALOG</a>
+                    <a href="/pages/catalog.html" class="header__nav-link">CATALOG</a>
                 </li>
                 <li class="header__nav-list-item">
-                    <a href="/" class="header__nav-link">ABOUT US</a>
+                    <a href="" class="header__nav-link">ABOUT US</a>
                 </li>
-            </ul>
-        </nav>    
-        <ul class="header__additional-list">
+            </ul>  
+            <ul class="header__additional-list">
             <li class="header__additional-list-item">
                 <button class="header__additional-search" type="button" ><img src="./pages/images/lupa.png"  alt="lupa"></button>
             </li>
             <li class="header__additional-list-item">
-                <a href="/" class="header__additional-link">CONTACT US</a>
+                <a href="/pages/contact_Us.html" class="header__additional-link">CONTACT US</a>
             </li> 
-        </ul class="header__adi">
-                  
+            </ul class="header__adi">
+        </nav>
+        </div>          
     </header>
-    <main>
+    <main class="container-back">
         <section class="container banner">
-            <div class="banner__slider">
+            <div class="slider">
+            <div class="slider__banner">
                 <p class="slider__title">01</p>
-                <button class="slider__btn" type="button"></button>
-                <button class="slider__btn" type="button"></button>
-                <button class="slider__btn" type="button"></button>
-                <button class="slider__btn" type="button"></button>
+                <button class="slider__btn slider__btn_active" title="slider_1" type="button"></button>
+                <button class="slider__btn" title="slider_2" type="button"></button>
+                <button class="slider__btn" title="slider_3" type="button"></button>
+                <button class="slider__btn" title="slider_4" type="button"></button>
             </div>
             <div class="banner__title">
                 <h1 class="banner__text">THE OOH NOO COLLECTION</h1>
                 <p class="banner__desc">Designed in Slovenia</p>
-                <button class="banner__btn">EXPLORE NOW</button>
+                <button class="banner__btn" id="open-modal">EXPLORE NOW</button>
             </div>
-            <p class="banner__footer">
-                FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!
-            </p>
-            <img class="banner_img" src="./pages/images/banner.png" alt="monster and car">
+            </div>
+            <div>
+                <p class="banner__footer">
+                    FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!
+                </p>
+                <img class="banner_img" src="./pages/images/banner.png" alt="monster and car">
+            </div>
         </section>
-    </main>
     <section class="container products">
         <h2 class="products__title">CATEGORY PRODUCTS</h2>
         <ul class="products__list">
@@ -75,7 +79,7 @@
                 </a>
             </li>
             <li class="products__list-item">
-                <a  href="/" class="products__link" style="background-image: url(./pages/images/products_three.png);">
+                <a  href="/pages/toys.html" class="products__link" style="background-image: url(./pages/images/products_three.png);">
                     <span class="products__link-title">TOYS</span>
                 </a>
             </li>
@@ -95,11 +99,14 @@
         <img class="service__img" src="./pages/images/service.jpg" alt="blonde in a dress">
         <div class="service__block">
             <h2 class="service__title">DELIVERY</h2>
-            <ul class="service__list">
-                <li class="service__list-item"><button class="service__btn" type="button">Delivery</button></li>
-                <li class="service__list-item"><button class="service__btn" type="button">Guarantee</button></li>
-                <li class="service__list-item"><button class="service__btn" type="button">Credit</button></li>
-            </ul>
+            <div class="service__menu">
+                
+                    <button class="service__btn service__btn_active" type="button">Delivery</button>
+                
+                    <button class="service__btn" type="button">Guarantee</button>
+                
+                    <button class="service__btn" type="button">Credit</button>
+            </div>
             <p class="service__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
             <p class="service__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
             <a class="service__link" href="/">LEARN MORE</a>
@@ -123,9 +130,10 @@
         <div class="Info__contacts">
             <h2 class="contacts__title">CONTACTS</h2>
             <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <ifame class="contacts__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.3627681151182!2d49.29079778005579!3d53.51226763752443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1683364919262!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.2732817476856!2d49.29086628694461!3d53.512294950695164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1697791867692!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </article>
+    </main>
     <footer class="footer container">
         <div class="footer__block">
             <div class="footer__nav">
@@ -261,6 +269,35 @@
               <a class="web-design" href="#">Web Design — Direct Line Development</a>
             </div>
     </footer>
-    
+    <div class="modal" id="win-modal">
+        <form class="modal__form" action="#" name="contact">
+            <label class="modal__label" for="name">Name</label>
+            <input class="modal__input" id="name" type="text" placeholder="Ivan Ivanov">
+                <div class="modal__user">
+                    <div class="modal__two-input">
+                        <label class="modal__label" for="Phone">Phone</label>
+                        <input class="modal__input" id="Phone" type="tel">   
+                    </div>
+                    <div class="modal__two-input">
+                        <label class="modal__label" for="email">Email</label>
+                        <input class="modal__input" id="email" type="email"> 
+                    </div>
+                </div>
+                <label class="modal__label" for="message">Message</label>
+                <textarea class="modal__area" id="message" cols="30" rows="10"></textarea>
+                <fieldset class="modal-fieldset">
+                    <label class="modal__label" for="consent">
+                        <input class="modal__input-approval hidden" type="checkbox" id="consent">
+                        <span class="modal__click"></span>
+                        <span class="modal-fieldset__text">By clicking on the button, you consent to the processing of your personal data</span>
+                    </label> 
+                </fieldset>
+                <button class="button modal__btn">SUBMIT</button>    
+                <button class="modal-close" id="close-win-modal">
+                    <svg width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path></g></svg>
+                </button>  
+        </form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html> 

@@ -6,27 +6,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 7px;
-}
-
-.crumbs__list{
-    display: flex;
-    padding: 0px ;
-
-}
-
-.crumbs__list_iten{
-    margin-right: 11px;
-}
-.crumbs__link{
-    font-family:Crimson Text ;
-    font-size: 20px;
-    color: black;
-
-}
-
-.crumbs__list::after{
-    content: '>';
+    padding-top: 27px;
 }
 
 .products__list{
@@ -40,6 +20,10 @@
     
 }
 
+.products__list-two{
+    display: flex;
+    padding-left: 122px;
+}
 .products__list-item{
     padding: 10px;
     box-sizing: border-box;
@@ -50,6 +34,7 @@
     background-repeat: no-repeat;
     
 }
+
 
 .products__link{
     display: flex;
@@ -74,8 +59,9 @@
 }
 
 .description{
-    margin-left: 198px;
+    margin-left: 310px;
     padding-top: 15px;
+    padding-bottom: 55px;
     width: 680px;
 }
 

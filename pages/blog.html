@@ -14,32 +14,33 @@
     <title>blog</title>
 </head>
 <body>
-    <header class="container header">
+    <header class="header-main container-back">
+        <div class="header container">
         <a href="/" class="header__link">
-            <img class="header__img" src="./images/logo.png" alt="Logo DLK">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-list-item">
-                    <a href="/" class="header__nav-link">BLOG</a>
+                    <a href="/pages/blog.html" class="header__nav-link">BLOG</a>
                 </li>
                 <li class="header__nav-list-item">
-                    <a href="/" class="header__nav-link">CATALOG</a>
+                    <a href="/pages/catalog.html" class="header__nav-link">CATALOG</a>
                 </li>
                 <li class="header__nav-list-item">
-                    <a href="/" class="header__nav-link">ABOUT US</a>
+                    <a href="" class="header__nav-link">ABOUT US</a>
                 </li>
-            </ul>
-            <ul class="header__search">
-                <li class="search__nav-list-item">
-                    <input type="search" name="search" placeholder="">
-                    <button type="button">search</button>
-                </li>
-                <li class="search__nav-list-item">
-                    <a href="/" class="header__link">Contact up</a>
-                </li> 
-            </ul>
-        </nav>           
+            </ul>  
+            <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <button class="header__additional-search" type="button" ><img src="/pages/images/lupa.png"  alt="lupa"></button>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/pages/contact_Us.html" class="header__additional-link">CONTACT US</a>
+            </li> 
+            </ul class="header__adi">
+        </nav>
+        </div>          
     </header>
     <main class="container blog">
         <h1 class="container blog__title">BLOG</h1> 
@@ -47,8 +48,11 @@
             <li class="crumbs__list_iten">
                 <a class="crumbs__link" href="#">Home</a>
             </li>
+            <svg class="svg-crumds" width="8" height="12" viewBox="0 0 17 29">
+                <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
+              </svg>
             <li class="crumbs__link">
-                <a class="crumbs__link" href="#">Blog</a>
+                <span class="crumbs__current">Blog</span>
             </li>
         </ul>
         <section class="container blog-grid">
