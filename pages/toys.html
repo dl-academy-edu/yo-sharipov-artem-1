@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/toys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <title>toys</title>
+</head>
+<body>
+    <header class="header-main container-back">
+        <div class="header container">
+        <a href="/" class="header__link">
+            <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item">
+                    <a href="/pages/blog.html" class="header__nav-link">BLOG</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="/pages/catalog.html" class="header__nav-link">CATALOG</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">ABOUT US</a>
+                </li>
+            </ul>  
+            <ul class="header__additional-list">
+            <li class="header__additional-list-item">
+                <button class="header__additional-search" type="button" ><img src="/pages/images/lupa.png"  alt="lupa"></button>
+            </li>
+            <li class="header__additional-list-item">
+                <a href="/pages/contact_Us.html" class="header__additional-link">CONTACT US</a>
+            </li> 
+            </ul class="header__adi">
+        </nav>
+        </div>          
+    </header>
+    <main class="container-back kids">
+        <h1 class="container kids__title">Toy for kids</h1>
+        <ul class="container crumbs__list">
+            <li class="crumbs__list_iten">
+                <a class="crumbs__link" href="#">Home</a>
+            </li>
+            <svg class="svg-crumds" width="8" height="12" viewBox="0 0 17 29">
+                <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
+            </svg>
+            <li class="crumbs__list_iten">
+                <a class="crumbs__link" href="#">Catalog</a>
+            </li>
+            <svg class="svg-crumds" width="8" height="12" viewBox="0 0 17 29">
+                <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
+            </svg>
+            <li class="crumbs__list_iten">
+                <span class="crumbs__current">Toys</span>
+            </li>
+
+        </ul>
+        <div class="filter">
+            <form class="filter__form" action="#">
+            <fieldset class="cost">
+                <legend class="filter__title">Cost</legend>
+                <input class="filter__inp" type="range" id="fader" min="0" max="500"
+                value="120">
+                <div class="filter_value">
+                    <span>0</span>
+                    <span>500</span>
+                </div>
+            </fieldset>
+            <fieldset class="color">
+            <legend class="filter__title">Color</legend>
+                <ul class="color__list">
+                    <li class="color__item">  
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox" checked>
+                            <span class="click"></span>
+                            <span class="filter__text">Black</span>
+                        </label>
+                    </li>  
+                    <li class="color__item">
+                        <label class="filter__color" >
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">Blue</span>     
+                        </label>
+                    </li>
+                    <li class="color__item">
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">Green</span>
+                        </label> 
+                    </li>
+                    <li class="color__item">
+                        <label class="filter__color">
+                            <input class="filter__check" type="checkbox">
+                            <span class="click"></span>
+                            <span class="filter__text">White</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="Delivery">
+            <legend class="filter__title">Delivery</legend>
+                <ul class="Delivery__list">
+                    <li class="Delivery__item">
+                        <label class="filter__Delivery">
+                            <input class="filter__radio" type="radio" >
+                            <span class="clack"></span>
+                            <span class="filter__text">Free shipping</span>
+                        </label> 
+                    </li>
+                    <li class="Delivery__item">
+                        <label class="filter__Delivery">
+                            <input class="filter__radio" type="radio" checked>
+                            <span class="clack"></span>
+                            <span class="filter__text">Fast shipping</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="Amount">
+            <legend class="filter__title">Amount</legend>
+            <ul class="amount__list">
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="0-5" checked>
+                    <span class ="value value_active">0-5</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="10-20">
+                    <span class="value">10-20</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="amount__label">
+                    <input class="filter__amount" type="radio" name="range" value="20-50">
+                    <span class="value">20-50</span>
+                  </label>
+                </li>
+                </ul>
+            </fieldset>
+            <button class="filter__btn" type="button">APPLY</button>
+            </form>
+        </div>
+    <section class="container cards">
+        <ul class="cards__list">
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#">
+                <img src="./images/cards_akula.png" alt="">
+                <span class="cards__text"> SHARKY BEAN BAG CHAIR COVER</span>
+                </a>
+                <span class="cards__price"> $60.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#">
+                    <img src="./images/cards_ramki.png" alt="">
+                <span class="cards__text"> BRASS DECO FRAMES</span>
+                </a>
+                <span class="cards__price"> $66.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#">
+                    <img src="./images/cards_fartuk.png" alt="">
+                <span class="cards__text"> CIBO FULL APRON</span>
+                </a>
+                <span class="cards__price"> $60.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#">
+                    <img src="./images/cards_toy.png" alt="">
+                <span class="cards__text"> GATCHA GATCHA GUMBALL MACHINE</span>
+                </a>
+                <span class="cards__price"> $56.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#">
+                    <img src="./images/cards_candle.png" alt="">
+                <span class="cards__text"> CHRISTMAS ADVENT SCENTED CANDLE</span>
+                </a>
+                <span class="cards__price"> $29.00 USD</span>
+            </li>
+            <li class="cards__list-iten">
+                <a class="cards__link" href="#">
+                    <img src="./images/cards_lamp.png" alt="">
+                <span class="cards__text"> TANGLE SPINNING TEA LIGHT</span>
+                </a>
+                <span class="cards__price"> $56.00 USD</span>
+            </li>
+        </ul>
+    <div class="pages">
+        <a href="#" class="arrow__back">
+            <span class="back">
+              <svg class="svg" width="17" height="29" viewBox="0 0 17 29">
+                <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
+              </svg>
+            </span>
+          </a>
+        <ul class="pages__list">
+            <li class="pages__list-iten">
+                <a class="pages__link pages__link_active" href="#">1</a>
+            </li>
+            <li class="pages__list-iten">
+                <a class="pages__link" href="#">2</a>
+            </li>
+            <li class="pages__list-iten">
+                <a class="pages__link" href="#">3</a>
+            </li>
+            <li class="pages__list-iten">
+                <a class="pages__link" href="#">4</a>
+            </li>
+        </ul>
+        <a href="#" class="arrow__next">
+            <span class="prev">
+              <svg class="svg" width="17" height="29" viewBox="0 0 17 29">
+                <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
+              </svg>
+            </span>
+          </a>
+    </div> 
+    </section>   
+    </main>
+    <footer class="footer container">
+        <div class="footer__block">
+            <div class="footer__nav">
+            <p class="footer__title">Navigation</p>
+            <ul class="footer__list"> 
+                <li class="footer__list-item"><a class="footer__link" href="/">About Us</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Blog</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Design Services</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Featured On</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">2018 Holiday Catalog</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Shop By Designer</a></li>
+            </ul>
+            </div>
+            <div class="footer__nav">
+            <p class="footer__title">Customer Information</p>
+            <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__link" href="/">Contact Us</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Sale Exclusions</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Shipping & Returns</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Terms & Conditions</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Privacy Policy</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="/">Search</a></li>
+            </ul>
+            </div>
+            <div class="footer__nav">
+            <p class="footer__title">Connect</p>
+            <form class="footer-email" action="url">
+                <input class="footer__email__input" type="email" name="email" placeholder="email">
+                <Button class="footer-email__btn" type="submit" >JION</Button>
+            </form>
+            <ul class="messenger__list">
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./images/footer-face.svg" alt="Facebook"></a></Li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./images/footer-Twitter.svg" alt="Twitter"></a></Li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./images/footer-pinterset.svg" alt="Pinterest"></a></Li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./images/footer-insta.svg" alt="Instagram"></a></Li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer__additional">
+                <form class="ratings"">
+                  <input class="ratings__input hidden" id="star-5" type="radio" name="rating" value="5">
+                  <label class="ratings__lable" for="star-5" title="5">
+                      <svg class="svg" width="17" height="17" viewBox="0 0 17 17">
+                        <path d="M 7.5 3 
+                        L 6.5 6.2 L 3.3 6.2 
+                        C 2 6.2 1 6.2 1.6 7.4
+                        L 2.6 8.5 L 5.3 10 L 4.3 13.2
+                        C 3.9 14.4 3 17 6 15
+                        L 6.5 14.4 L 8.5 12.4 L 10.5 14.4
+                        C 12 15.5 12.5 16.3 13.2 14.4
+                        L 12.8 13 L 11.8 10 L 14.5 8.5
+                        C 15.5 7.7 16.3 6.6 15.1 6.2
+                        L 14 6.2 L 10.6 6.2 L 9.6 3.1
+                        C 9.2 2 8.5 1.5 8 2
+                        Z" />
+                      </svg>
+                  </label>
+          
+                  <input class="ratings__input hidden" id="star-4"  type="radio" name="rating" value="4">
+                  <label class="ratings__lable" for="star-4" title="4">
+                    <svg class="svg" width="17" height="17" viewBox="0 0 17 17">
+                      <path d="M 7.5 3 
+                        L 6.5 6.2 L 3.3 6.2 
+                        C 2 6.2 1 6.2 1.6 7.4
+                        L 2.6 8.5 L 5.3 10 L 4.3 13.2
+                        C 3.9 14.4 3 17 6 15
+                        L 6.5 14.4 L 8.5 12.4 L 10.5 14.4
+                        C 12 15.5 12.5 16.3 13.2 14.4
+                        L 12.8 13 L 11.8 10 L 14.5 8.5
+                        C 15.5 7.7 16.3 6.6 15.1 6.2
+                        L 14 6.2 L 10.6 6.2 L 9.6 3.1
+                        C 9.2 2 8.5 1.5 8 2
+                        Z" />
+                    </svg>
+                  </label>
+          
+                  <input class="ratings__input hidden" id="star-3" type="radio" name="rating" value="3">
+                  <label class="ratings__lable" for="star-3" title="3">
+                    <svg class="svg" width="17" height="17" viewBox="0 0 17 17">
+                      <path d="M 7.5 3 
+                        L 6.5 6.2 L 3.3 6.2 
+                        C 2 6.2 1 6.2 1.6 7.4
+                        L 2.6 8.5 L 5.3 10 L 4.3 13.2
+                        C 3.9 14.4 3 17 6 15
+                        L 6.5 14.4 L 8.5 12.4 L 10.5 14.4
+                        C 12 15.5 12.5 16.3 13.2 14.4
+                        L 12.8 13 L 11.8 10 L 14.5 8.5
+                        C 15.5 7.7 16.3 6.6 15.1 6.2
+                        L 14 6.2 L 10.6 6.2 L 9.6 3.1
+                        C 9.2 2 8.5 1.5 8 2
+                        Z" />
+                    </svg>
+                  </label>
+          
+                  <input class="ratings__input hidden" id="star-2" type="radio" name="rating" value="2">
+                  <label class="ratings__lable" for="star-2" title="2">
+                    <svg class="svg" width="17" height="17" viewBox="0 0 17 17">
+                      <path d="M 7.5 3 
+                        L 6.5 6.2 L 3.3 6.2 
+                        C 2 6.2 1 6.2 1.6 7.4
+                        L 2.6 8.5 L 5.3 10 L 4.3 13.2
+                        C 3.9 14.4 3 17 6 15
+                        L 6.5 14.4 L 8.5 12.4 L 10.5 14.4
+                        C 12 15.5 12.5 16.3 13.2 14.4
+                        L 12.8 13 L 11.8 10 L 14.5 8.5
+                        C 15.5 7.7 16.3 6.6 15.1 6.2
+                        L 14 6.2 L 10.6 6.2 L 9.6 3.1
+                        C 9.2 2 8.5 1.5 8 2
+                        Z" />
+                    </svg>
+                  </label>
+          
+                  <input class="ratings__input hidden" id="star-1" type="radio" name="rating" value="1">
+                  <label class="ratings__lable" for="star-1" title="1">
+                    <svg class="svg" width="17" height="17" viewBox="0 0 17 17">
+                      <path d="M 7.5 3 
+                        L 6.5 6.2 L 3.3 6.2 
+                        C 2 6.2 1 6.2 1.6 7.4
+                        L 2.6 8.5 L 5.3 10 L 4.3 13.2
+                        C 3.9 14.4 3 17 6 15
+                        L 6.5 14.4 L 8.5 12.4 L 10.5 14.4
+                        C 12 15.5 12.5 16.3 13.2 14.4
+                        L 12.8 13 L 11.8 10 L 14.5 8.5
+                        C 15.5 7.7 16.3 6.6 15.1 6.2
+                        L 14 6.2 L 10.6 6.2 L 9.6 3.1
+                        C 9.2 2 8.5 1.5 8 2
+                        Z" />
+                    </svg>
+                  </label>
+                  <p class="ratings__title">Company Rating</p>
+                </form>
+              <p class="copyr" >Copyright &#169; 2018 Dlk • Design Life Kids</p>
+              <a class="web-design" href="#">Web Design — Direct Line Development</a>
+            </div>
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,262 @@
+.kids__title{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+
+.filter{
+    margin-top: 50px;
+    padding: 42px 110px 16px;
+    background-color:rgba(125, 151, 218, 0.2) ;
+}
+
+.filter__form{
+    display: flex;
+}
+
+.filter__title{
+    font-family: open sans;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.filter__inp{
+    -webkit-appearance: none;
+    border-radius: 1px;
+    width: 188px;
+    height: 4px;
+    margin-top: 17px;
+    outline: 0;
+    appearance: none;
+    border: 0px solid #d4d4d4;
+    background-color: #7f7f7f;
+    
+}
+
+.filter__inp::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    border: 8px solid #d4d4d4;
+    border-color: #c29974;
+    
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.filter__inp::-moz-range-thumb{
+    background: rgba(194, 153, 116, 1);
+    box-shadow: 50px 0 0 185px red;
+}
+
+.cost{
+    margin-left: -16px;
+}
+
+.filter_value{
+    display: flex;
+    font-family: Open Sans;
+    font-size: 16px;
+    justify-content: space-between;
+    padding-top: 13px;
+    width: 207px;
+}
+
+.color{
+    margin-left: 6%;
+}
+
+.color__list{
+    margin: 0 ;
+    padding: 8px 0 0;
+}
+
+.color__item{
+    padding-bottom: 15px ;
+}
+
+.filter__color{
+    display: flex;
+    align-items: center;
+    margin-right: 33px;
+    position: relative;
+}
+
+.filter__check{
+    display: none;
+}
+
+.click{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #c29974;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+
+.click::before{
+    content: url(/pages/images/click.png);
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    top: -2px;
+    
+}
+
+.filter__check:checked + .click::before{
+    opacity: 1;
+    
+}
+
+input:checked + .click{
+    background-color: white ;
+}
+
+.filter__text{
+    margin-left: 10px;
+    font-family: open sans;
+    
+}
+
+.Delivery{
+    margin-left: 64px;
+}
+
+.Delivery__list{
+    margin: 0 ;
+    padding: 8px 0 0;
+}
+
+.Delivery__item{
+    padding-bottom: 10px;
+}
+
+.filter__radio{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0); 
+    overflow: hidden;
+    padding-left: 20px;
+}
+.clack{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #c29974;
+    border-radius: 100%;
+    margin-left: -20px;
+}
+
+.clack::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-45%,-54%);
+    width: 12px;
+    height: 12px;
+    background-color: #c29974;
+    border-radius: 100%;
+    
+}
+
+.filter__radio:checked + .clack::before{
+    opacity: 1;
+}
+
+.filter__Delivery{
+    display: flex;
+    align-items: center;
+}
+
+.Amount{
+    margin-left: 42px;
+    
+}
+
+.amount__list{
+    margin: 10px 3px auto;
+    padding: 0;
+    display: flex;
+}
+
+.amount__label{
+    display: flex;
+    text-align: center;
+    line-height: 33px;
+    font-family: open sans;
+}
+
+.amount__label>input+.value {
+    width: 80px;
+    height: 35px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filter__amount{
+    display: none;
+}
+
+.amount__label>input:checked+.value {
+    background-color: #f3d0db;
+}
+
+.filter__btn{
+    width: 80px;
+    margin: 35px 43px 118px;
+    background-color: black;
+    font-family: open sans;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+
+.cards{
+    padding: 0;
+    margin: 0 0 0 107px;
+}
+
+.cards__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 62px;
+}
+
+.cards__list-iten{
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    width: 26.8vw;
+    padding-bottom: 95px;
+    align-items: center;
+}
+
+.cards__text{
+    display: inline-block;
+    width: 100%;
+    height: 33px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1e0606;
+    text-align: center;
+    font-family: open sans;
+}
+
+.cards__price{
+    font-family: open sans;
+    font-weight: 700;
+    font-size: 16px;
+}
