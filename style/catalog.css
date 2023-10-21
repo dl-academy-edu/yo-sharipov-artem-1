@@ -57,6 +57,9 @@
     width: 160px;
     margin: 0 auto;
 }
+.products__link-title:hover {
+    text-decoration: underline
+}
 
 .description{
     margin-left: 310px;

@@ -57,7 +57,8 @@
     color: #818181;
 }
 
-.blog__list-title{
+.blog__link{
+    color: black;
     font-family: Montserrat;
     font-weight: 700;
     font-size: 24px;
@@ -66,6 +67,10 @@
     padding-bottom: 15px;
     line-height: 29px;
     
+}
+
+.blog__link:hover {
+    text-decoration: underline
 }
 
 .blog__text{

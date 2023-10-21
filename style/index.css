@@ -183,6 +183,10 @@
     
 }
 
+.products__link-title:hover{
+    text-decoration: underline;
+}
+
 .products__slider{
     padding-top: 2px;
     display: flex;
@@ -199,6 +203,10 @@
     cursor: pointer;
 }
 
+.products__btn:hover{
+    transition: 4s;
+    fill: #C7C1C1 ;
+}
 .products__desc{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -285,7 +293,7 @@
     width: 480px ;
 }
 
-.service__link{
+.service-btn{
     display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -306,7 +314,13 @@
     padding-left: 0;
     padding-bottom: 95px;
 }
+.sponsor__list-iten:active,.sponsor__list-iten:hover {
+    opacity: .75
+}
 
+.sponsor__list-iten:active {
+    opacity: .4
+}
 .Info{
     display: flex;
     padding-bottom: 81px;
@@ -516,6 +530,7 @@ textarea{
 .modal__btn{
     color: white;
     width: 88px;
+    font-family: open sans;
 }
 
 .modal__text{
@@ -540,3 +555,8 @@ textarea{
 .modal-close:hover svg path{
     fill:rgb(149, 212, 212);
 }
+
+.modal-close:hover {
+    background-color: transparent;
+}
+

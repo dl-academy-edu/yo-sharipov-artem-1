@@ -46,13 +46,13 @@
         <h1 class="container kids__title">Toy for kids</h1>
         <ul class="container crumbs__list">
             <li class="crumbs__list_iten">
-                <a class="crumbs__link" href="#">Home</a>
+                <a class="crumbs__link" href="/index.html">Home</a>
             </li>
             <svg class="svg-crumds" width="8" height="12" viewBox="0 0 17 29">
                 <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
             </svg>
             <li class="crumbs__list_iten">
-                <a class="crumbs__link" href="#">Catalog</a>
+                <a class="crumbs__link" href="/pages/catalog.html">Catalog</a>
             </li>
             <svg class="svg-crumds" width="8" height="12" viewBox="0 0 17 29">
                 <path d ="M 0 3 L 11 14 L 0 26 L 3 29 L 17 14 L 3 0 Z"/>
@@ -111,14 +111,14 @@
                 <ul class="Delivery__list">
                     <li class="Delivery__item">
                         <label class="filter__Delivery">
-                            <input class="filter__radio" type="radio" >
+                            <input class="filter__radio" type="radio" name="shipping" value="Free" >
                             <span class="clack"></span>
                             <span class="filter__text">Free shipping</span>
                         </label> 
                     </li>
                     <li class="Delivery__item">
                         <label class="filter__Delivery">
-                            <input class="filter__radio" type="radio" checked>
+                            <input class="filter__radio" type="radio" name="shipping" value="Free" checked>
                             <span class="clack"></span>
                             <span class="filter__text">Fast shipping</span>
                         </label>
@@ -155,7 +155,8 @@
         <ul class="cards__list">
             <li class="cards__list-iten">
                 <a class="cards__link" href="#">
-                <img src="./images/cards_akula.png" alt="">
+                    <img src="./images/cards_akula.png" alt="">
+                    <span class="cards__hover">LEAN MORE</span>
                 <span class="cards__text"> SHARKY BEAN BAG CHAIR COVER</span>
                 </a>
                 <span class="cards__price"> $60.00 USD</span>
@@ -163,6 +164,7 @@
             <li class="cards__list-iten">
                 <a class="cards__link" href="#">
                     <img src="./images/cards_ramki.png" alt="">
+                    <span class="cards__hover">LEAN MORE</span>
                 <span class="cards__text"> BRASS DECO FRAMES</span>
                 </a>
                 <span class="cards__price"> $66.00 USD</span>
@@ -170,6 +172,7 @@
             <li class="cards__list-iten">
                 <a class="cards__link" href="#">
                     <img src="./images/cards_fartuk.png" alt="">
+                    <span class="cards__hover">LEAN MORE</span>
                 <span class="cards__text"> CIBO FULL APRON</span>
                 </a>
                 <span class="cards__price"> $60.00 USD</span>
@@ -177,6 +180,7 @@
             <li class="cards__list-iten">
                 <a class="cards__link" href="#">
                     <img src="./images/cards_toy.png" alt="">
+                    <span class="cards__hover">LEAN MORE</span>
                 <span class="cards__text"> GATCHA GATCHA GUMBALL MACHINE</span>
                 </a>
                 <span class="cards__price"> $56.00 USD</span>
@@ -184,6 +188,7 @@
             <li class="cards__list-iten">
                 <a class="cards__link" href="#">
                     <img src="./images/cards_candle.png" alt="">
+                    <span class="cards__hover">LEAN MORE</span>
                 <span class="cards__text"> CHRISTMAS ADVENT SCENTED CANDLE</span>
                 </a>
                 <span class="cards__price"> $29.00 USD</span>
@@ -191,6 +196,7 @@
             <li class="cards__list-iten">
                 <a class="cards__link" href="#">
                     <img src="./images/cards_lamp.png" alt="">
+                    <span class="cards__hover">LEAN MORE</span>
                 <span class="cards__text"> TANGLE SPINNING TEA LIGHT</span>
                 </a>
                 <span class="cards__price"> $56.00 USD</span>
@@ -255,7 +261,7 @@
             <div class="footer__nav">
             <p class="footer__title">Connect</p>
             <form class="footer-email" action="url">
-                <input class="footer__email__input" type="email" name="email" placeholder="email">
+                <input class="footer__email__input" type="email" name="email" placeholder="Email">
                 <Button class="footer-email__btn" type="submit" >JION</Button>
             </form>
             <ul class="messenger__list">

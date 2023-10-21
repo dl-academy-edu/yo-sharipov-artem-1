@@ -275,6 +275,15 @@ button{
     background-color: #000;
     border: none;
     cursor: pointer;
+    transition: background-color .4s
+}
+
+button:hover {
+    background-color: #c29974;
+}
+
+button:active {
+    background-color: #c2a68e
 }
 
 .footer-email__btn{
@@ -288,6 +297,16 @@ button{
     padding: 25px 0 0;
     margin: 0;
 }
+.messenger__list-item:hover {
+    transition: .4s;
+    opacity: .5
+}
+
+.messenger__list-item:active {
+    transition: .4s;
+    opacity: .2
+}
+
 .pages__list{
     display: flex;
     width: 234px;
@@ -352,8 +371,6 @@ button{
 .footer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1400px;
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 16px;
     line-height: 22px;

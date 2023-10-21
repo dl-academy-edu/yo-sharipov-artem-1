@@ -147,15 +147,18 @@ input:checked + .click{
     padding-left: 20px;
 }
 .clack{
-    position: absolute;
+    position: relative;
     width: 17px;
     height: 17px;
     border: 2px solid #c29974;
     border-radius: 100%;
     margin-left: -20px;
+    cursor: pointer;
 }
 
-.clack::before{
+
+
+.filter__radio:checked+.clack::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -244,6 +247,38 @@ input:checked + .click{
     align-items: center;
 }
 
+.cards__link{
+    position: relative;
+}
+.cards__hover{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: Montserrat,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    background-color: #e5eaf8;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    transition: .6s;
+}
+
+.cards__link:focus>.cards__hover,.cards__link:hover>.cards__hover {
+    opacity: .9;
+    transition: .4s
+}
+
+.cards__link:active>.cards__hover {
+    opacity: .67;
+    transition: .4s;
+}
 .cards__text{
     display: inline-block;
     width: 100%;
