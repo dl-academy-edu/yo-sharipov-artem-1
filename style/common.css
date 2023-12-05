@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #f5ebeb;
+    background-color: #fff;
 }
 
 ul{
@@ -14,19 +14,17 @@ a{
 *, ::after, ::before {
     box-sizing: inherit;
 }
-.container-back{
-    width: 100%;
-    max-width: 1400px;
-    margin: -16px auto;
-    background-color: #fff;
-}
+
 .container {
-    max-width: 1180px; 
-    padding: 0 20 px;
+    max-width: 1400px; 
+    padding: 0 20px;
     margin: 0 auto; 
+    
 }
 
-
+.header-main{
+    max-width: 1220px; 
+}
 
 .header,.header__nav{
     display: flex;
@@ -34,7 +32,7 @@ a{
 }
 
 .header {
-    padding: 49px 20px 36px;
+    padding: 49px 0px 36px;
     font-family: Open Sans;
 }
 
@@ -128,10 +126,12 @@ fieldset{
 }
 .crumbs__list{
     display: flex;
-    padding: 15px ;
+    padding: 0px ;
+    margin: 0 auto;
     font-family:Crimson Text ;
     font-size: 20px;
     color: black;
+    max-width: 1220px;
 
 }
 
@@ -164,23 +164,31 @@ fieldset{
 .crumbs__current{
     opacity: .5;
 }
-.footer{
+.footer__container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1220px;
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 16px;
     line-height: 22px;
-    background-color:rgba(67, 67, 67, 1);
-    ;
-    
+   
 }
+
+.footer{
+    background-color:rgba(67, 67, 67, 1);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .footer__block{
     display: flex;
+    max-width: 420px;
     justify-content: space-between;
-    padding: 99px 7.8% 13px;
+    padding: 99px 0 13px;
     
 }
 
@@ -193,7 +201,7 @@ fieldset{
 .footer__nav{
     width: 100%;
     max-width: 377px;
-    margin-right: 2%;
+    margin-right: 22px;
     
 }
 
@@ -365,17 +373,11 @@ button:active {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7.8% 100px
+    padding: 0 0 100px;
+    max-width: 1180px;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    font-family: "Open Sans",Arial,sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    background-color: #434343
-}
+
 
 .footer-email__btn{
     color: #fff;

@@ -5,11 +5,12 @@
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 14px;
+    max-width: 1220px;
 }
 
 .filter{
     margin-top: 50px;
-    padding: 42px 110px 16px;
+    padding: 42px 85px 16px;
     background-color:rgba(125, 151, 218, 0.2) ;
 }
 
@@ -253,10 +254,10 @@ input:checked + .click{
 .cards__hover{
     position: absolute;
     display: flex;
-    top: 50%;
+    top: 48%;
     left: 50%;
-    width: 50%;
-    height: 50%;
+    width: 207px;
+    height: 207px;
     align-items: center;
     justify-content: center;
     color: #000;

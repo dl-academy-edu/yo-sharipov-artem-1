@@ -14,8 +14,8 @@
     <title>blog</title>
 </head>
 <body>
-    <header class="header-main container-back">
-        <div class="header container">
+    <header class="header-main container">
+        <div class="header ">
         <a href="/" class="header__link">
             <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
         </a>
@@ -42,9 +42,9 @@
         </nav>
         </div>          
     </header>
-    <main class="container blog">
-        <h1 class="container blog__title">BLOG</h1> 
-        <ul class="container crumbs__list">
+    <main class="blog  container   ">
+        <h1 class="blog__title">BLOG</h1> 
+        <ul class="crumbs__list">
             <li class="crumbs__list_iten">
                 <a class="crumbs__link" href="#">Home</a>
             </li>
@@ -55,7 +55,7 @@
                 <span class="crumbs__current">Blog</span>
             </li>
         </ul>
-        <section class="container blog-grid">
+        <section class="blog-grid">
         <ul class="row flex-wrap blog__list">
             <li class="blog__list-item"> <img src="./images/blog_lego.jpg" alt="lego">
                 <p class="blog__data-text">23rd August 2018</p>
@@ -88,7 +88,7 @@
                 <p class="blog__text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
             </li>
         </ul>
-        <div class="pages">
+        <div class="pages container">
             <a href="#" class="arrow__back">
                 <span class="back">
                   <svg class="svg" width="17" height="29" viewBox="0 0 17 29">
@@ -120,7 +120,8 @@
     </div> 
     </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer container wrapper">
+        <div class="footer__container">
         <div class="footer__block">
             <div class="footer__nav">
             <p class="footer__title">Navigation</p>
@@ -254,6 +255,7 @@
               <p class="copyr" >Copyright &#169; 2018 Dlk • Design Life Kids</p>
               <a class="web-design" href="#">Web Design — Direct Line Development</a>
             </div>
+        </div>
     </footer>
 </body>
 </html>

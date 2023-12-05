@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header-main container-back">
+    <header class="header-main container">
         <div class="header container">
         <a href="/" class="header__link">
             <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
@@ -42,7 +42,7 @@
         </nav>
         </div>          
     </header>
-    <main class="container-back">
+    <main class="container">
         <section class="container banner">
             <div class="slider">
             <div class="slider__banner">
@@ -143,7 +143,8 @@
         </div>
     </article>
     </main>
-    <footer class="footer container">
+    <footer class="footer container wrapper">
+        <div class="footer__container">
         <div class="footer__block">
             <div class="footer__nav">
             <p class="footer__title">Navigation</p>
@@ -174,22 +175,10 @@
                 <Button class="footer-email__btn" type="submit" >JION</Button>
             </form>
             <ul class="messenger__list">
-                <li class="messenger__list-item">
-                    <a class="messenger__link" href="/">
-                        <img src="./pages/images/footer-face.svg" alt="Facebook"></a>
-                    </li>
-                <li class="messenger__list-item">
-                    <a class="messenger__link" href="/">
-                        <img src="./pages/images/footer-Twitter.svg" alt="Twitter"></a>
-                    </li>
-                <li class="messenger__list-item">
-                    <a class="messenger__link" href="/">
-                        <img src="./pages/images/footer-pinterset.svg" alt="Pinterest"></a>
-                    </li>
-                <li class="messenger__list-item">
-                    <a class="messenger__link" href="/">
-                        <img src="./pages/images/footer-insta.svg" alt="Instagram"></a>
-                    </li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./pages/images/footer-face.svg" alt="Facebook"></a></Li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./pages/images/footer-Twitter.svg" alt="Twitter"></a></Li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./pages/images/footer-pinterset.svg" alt="Pinterest"></a></Li>
+                <Li class="messenger__list-item"><a class="messenger__link" href="/"><img class="messenger_img" src="./pages/images/footer-insta.svg" alt="Instagram"></a></Li>
             </ul>
             </div>
         </div>
@@ -289,6 +278,7 @@
               <p class="copyr" >Copyright &#169; 2018 Dlk • Design Life Kids</p>
               <a class="web-design" href="#">Web Design — Direct Line Development</a>
             </div>
+        </div>
     </footer>
     <div class="modal" id="win-modal">
         <form class="modal__form" action="#" name="contact">

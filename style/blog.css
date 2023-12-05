@@ -4,10 +4,11 @@
     max-width: 1400px;
     margin: 0 auto;
     background-color: #fff;
-
+    max-width: 1220px;
 }
 
 .blog__title{
+    margin: 0 auto;
     padding-bottom: 14px;
     padding-top: 15px;
     font-family: Montserrat,Arial,sans-serif;
@@ -15,6 +16,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
+    
 }
 
 .blog-grid{
@@ -37,11 +39,6 @@
     width: 380px;
 }
 
-.blog__text{
-    display: block;
-    width: 380px;
-}
-
 .row{
     clear: both;
     content: " ";
@@ -53,7 +50,7 @@
     font-family: Open Sans;
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 0px;
+    margin-bottom: 7px;
     color: #818181;
 }
 
@@ -79,6 +76,7 @@
     font-size: 18px;
     margin: 0;
     padding-bottom: 37px;
+    padding-top: 16px;
     line-height: 25px;
 }
 

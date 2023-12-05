@@ -14,7 +14,7 @@
     <title>catalog</title>
 </head>
 <body> 
-    <header class="header-main container-back">
+    <header class="header-main container">
         <div class="header container">
         <a href="/" class="header__link">
             <img class="header__img" src="./images/logo.png" alt="Logo DLK" width="100px" height="52px">
@@ -42,8 +42,8 @@
         </nav>
         </div>          
     </header>
-    <main class="products container-back">
-            <h1 class="container products__title">Category Products</h1>
+    <main class="products container">
+            <h1 class="products__title">Category Products</h1>
             <ul class="container crumbs__list">
                 <li class="crumbs__list_iten">
                     <a class="crumbs__link" href="/index.html">Home</a>
@@ -55,14 +55,14 @@
                     <span class="crumbs__current">Catalog</span>
                 </li>
             </ul>
-        <section class="container products">
+        <section class="products">
             <ul class="container products__list">
                 <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_one.png); background-color:rgba(219, 228, 219, 1);">
                     <span class="products__link-title">APPAREL KIDS</a></li>
                 <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_two.png); background-color: rgba(234, 221, 211, 1);">
                     <span class="products__link-title">HOLIDAY SHOP</a></li>
-                <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_three.png); background-color: rgba(234, 221, 211, 1);">
-                    <span class="products__link-title">YOYS</a></li>
+                <li class="products__list-item"><a  href="./toys.html" class="products__link" style="background-image: url(./images/products_three.png); background-color: rgba(234, 221, 211, 1);">
+                    <span class="products__link-title">TOYS</a></li>
             <ul class="container products__list-two">
                 <li class="products__list-item"><a  href="/" class="products__link" style="background-image: url(./images/products_four.png); background-color: rgba(213, 212, 225, 1);">
                     <span class="products__link-title">ACCESSORIES</a></li>
@@ -80,7 +80,8 @@
             </p>
         </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer container wrapper">
+        <div class="footer__container">
         <div class="footer__block">
             <div class="footer__nav">
             <p class="footer__title">Navigation</p>
@@ -214,6 +215,7 @@
               <p class="copyr" >Copyright &#169; 2018 Dlk • Design Life Kids</p>
               <a class="web-design" href="#">Web Design — Direct Line Development</a>
             </div>
+        </div>
     </footer>
     
 </body>
